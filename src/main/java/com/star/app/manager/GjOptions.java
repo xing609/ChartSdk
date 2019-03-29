@@ -27,8 +27,8 @@ public class GjOptions {
 
     public static class Builder {
         private String mReqUrl = Constant.ReqUrl.BASE_URL_TEST;//默认是测试地址
-        private String mToken;//用户token
-        private String mLoginOutActivity;//帐号被挤跳转的activity
+        private String token;//用户token
+        private String loginOutActivity;//帐号被挤跳转的activity
         /**
          * 配置BASE 请求域名
          *
@@ -45,20 +45,20 @@ public class GjOptions {
             return mReqUrl;
         }
         public Builder setToken(String token) {
-            this.mToken = token;
+            this.token = token;
             return this;
         }
-        public String getmToken() {
-            return mToken;
+        public String getToken() {
+            return token;
         }
-        public String getmLoginOutActivity() {
-            return mLoginOutActivity;
+        public String getLoginOutActivity() {
+            return loginOutActivity;
         }
 
-        public Builder setmLoginOutActivity(String mLoginOutActivity) {
+        public Builder setLoginOutActivity(String mLoginOutActivity) {
             if (mLoginOutActivity == null || mLoginOutActivity.length() == 0)
                 throw new IllegalArgumentException("The loginOutActivity can not be empty,Please configure!");
-            this.mLoginOutActivity = mLoginOutActivity;
+            this.loginOutActivity = mLoginOutActivity;
             return this;
         }
         public GjOptions build() {

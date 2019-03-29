@@ -47,7 +47,7 @@ public class GjChart {
         final String appVersion = String.valueOf(AppUtil.getAppVersionName(mContext));
         final String mobileType = AppUtil.getClientModel();
         final String mobileSystem = AppUtil.getOSVersionCode();
-        final String token = GjOptions.getInstance().getmToken();
+        final String token = GjOptions.getInstance().getToken();
         XApi.registerProvider(new NetProvider() {
             @Override
             public Interceptor[] configInterceptors() {

@@ -395,7 +395,7 @@ public class MarketChartActivity extends BaseActivity implements KMarketChartVie
             ivDownOrUp.setImageResource(R.mipmap.iv_chart_details_res);
             invOrVolumeaPopwindow.setShow(llRoseSellOrBuy, width);
         } else if (i == R.id.llPlus) {
-            if (ValueUtil.isStrNotEmpty(GjOptions.getInstance().getmToken())) {
+            if (ValueUtil.isStrNotEmpty(GjOptions.getInstance().getToken())) {
                 if (tvAddPlus.getText().equals(context.getString(R.string.txt_cancel_my_change))) {
                     List<Long> longList = new ArrayList<>();//取消自选时要取检查是否在自选接口的id,因为只有自选列表返回了，其它列表没有这个id
                     longList.add(changeAdd.getId());
@@ -410,9 +410,9 @@ public class MarketChartActivity extends BaseActivity implements KMarketChartVie
                 }
             } else {
                 //去登录
-                if (ValueUtil.isStrNotEmpty(GjOptions.getInstance().getmLoginOutActivity())) {
+                if (ValueUtil.isStrNotEmpty(GjOptions.getInstance().getLoginOutActivity())) {
                     Intent intent = new Intent();
-                    intent.setClassName(ContextUtil.getContext(), GjOptions.getInstance().getmLoginOutActivity());
+                    intent.setClassName(ContextUtil.getContext(), GjOptions.getInstance().getLoginOutActivity());
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     ContextUtil.getContext().startActivity(intent);
                 }
