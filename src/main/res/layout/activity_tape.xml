@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c2A2D4F"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/titleBar"
+        layout="@layout/include_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+    <View
+        android:id="@+id/vTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1"
+        android:background="@color/cFF3F4260"
+        android:visibility="gone"/>
+    <GridView
+        android:id="@+id/gvTape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:verticalSpacing="@dimen/d1"
+        android:horizontalSpacing="@dimen/d1"
+        android:background="@color/cFF3F4260"
+        android:numColumns="2" />
+    <View
+        android:id="@+id/vBottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1"
+        android:background="@color/cFF3F4260"
+        android:visibility="gone"/>
+    <include
+        android:id="@+id/vEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/viewTab"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        layout="@layout/view_empty"
+        android:visibility="gone" />
+
+</LinearLayout>

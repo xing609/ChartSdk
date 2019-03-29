@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="55dp"
+    android:layout_height="@dimen/d40"
+    android:background="@color/c2A2D4F">
+
+    <RelativeLayout
+        android:id="@+id/rlVlure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/d5">
+
+        <TextView
+            android:id="@+id/tvValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/d5"
+            android:text="3m"
+            android:textColor="@color/c9EB2CD"
+            android:textSize="@dimen/f16" />
+
+        <TextView
+            android:id="@+id/tvTab"
+            android:layout_width="@dimen/d14"
+            android:layout_height="@dimen/d3"
+            android:layout_below="@+id/tvValue"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_index_circular" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivopen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/d5"
+        android:layout_marginRight="@dimen/d1"
+        android:src="@mipmap/iv_chart_date_down"
+        />
+</RelativeLayout>

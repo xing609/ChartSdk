@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c2A2D4F"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d60"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/d12"
+        android:paddingTop="@dimen/d5"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingRight="@dimen/d12"
+        android:paddingBottom="@dimen/d5">
+
+        <com.star.app.widget.autoText.AutofitTextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="left"
+            android:maxLines="1"
+            android:textColor="@color/c9EB2CD"
+            android:textSize="@dimen/f16"
+            autofit:minTextSize="@dimen/f8" />
+
+        <com.star.app.widget.autoText.AutofitTextView
+            android:id="@+id/tvValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/d4"
+            android:gravity="left"
+            android:maxLines="1"
+            android:textColor="@color/cF27A68"
+            android:textSize="@dimen/f18"
+            autofit:minTextSize="@dimen/f8" />
+
+    </LinearLayout>
+</LinearLayout>

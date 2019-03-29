@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llBottomTab"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c25345B"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="#20ffffff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llPlus"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/d50"
+            android:layout_marginLeft="@dimen/d1"
+            android:layout_marginTop="@dimen/d1"
+            android:layout_marginBottom="@dimen/d1"
+            android:layout_weight="1"
+            android:background="@color/c25345B"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ivAddPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvAddPlus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/d2"
+                android:gravity="center"
+                android:text="@string/txt_chart_plus"
+                android:textColor="@color/c9EB2CD"
+                android:textSize="@dimen/f12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTape"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/d50"
+            android:layout_marginTop="@dimen/d1"
+            android:layout_marginBottom="@dimen/d1"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_chart_tabbar_pankou_nor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/d2"
+                android:gravity="center"
+                android:text="@string/txt_tape"
+                android:textColor="@color/c9EB2CD"
+                android:textSize="@dimen/f12" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llSpecs"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/d50"
+            android:layout_marginTop="@dimen/d1"
+            android:layout_marginBottom="@dimen/d1"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/iv_chart_specs" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/d2"
+                android:gravity="center"
+                android:text="@string/txt_chart_speces"
+                android:textColor="@color/c9EB2CD"
+                android:textSize="@dimen/f12" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llWarn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/d50"
+            android:layout_marginTop="@dimen/d1"
+            android:layout_marginBottom="@dimen/d1"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/iv_chart_warn" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/d2"
+                android:gravity="center"
+                android:text="@string/txt_chart_warn"
+                android:textColor="@color/c9EB2CD"
+                android:textSize="@dimen/f12" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llShare"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/d50"
+            android:layout_marginTop="@dimen/d1"
+            android:layout_marginRight="@dimen/d1"
+            android:layout_marginBottom="@dimen/d1"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/iv_chart_share" />
+
+            <TextView
+                android:id="@+id/tvShare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/d2"
+                android:gravity="center"
+                android:text="@string/txt_chart_share"
+                android:textColor="@color/c9EB2CD"
+                android:textSize="@dimen/f12" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

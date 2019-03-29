@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlShareEWM"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cF2F6FA"
+    android:gravity="center"
+    android:paddingTop="@dimen/d15"
+    android:paddingBottom="@dimen/d15">
+
+    <ImageView
+        android:id="@+id/ivEwm"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:id="@+id/ivlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/d20"
+        android:layout_toRightOf="@+id/ivEwm"
+         />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/d15"
+        android:layout_toRightOf="@+id/ivlogo"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTxjs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/c161922"
+            android:textSize="@dimen/f16" />
+
+        <TextView
+            android:id="@+id/tvEWMContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_chart_fenxiangdibuzhanshi"
+            android:textColor="@color/c9EB2CD"
+            android:textSize="@dimen/f12" />
+    </LinearLayout>
+
+</RelativeLayout>

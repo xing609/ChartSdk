@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c2A2D4F">
+
+    <include
+        android:id="@+id/titleBar"
+        layout="@layout/include_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@+id/rlLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llBottomTab"
+        android:layout_below="@+id/titleBar">
+        <!--时间 买卖-->
+        <include
+            android:id="@+id/llRoseSellOrBuy"
+            layout="@layout/include_market_kline_datetime_buysell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/viewline"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d1"
+            android:layout_below="@+id/llRoseSellOrBuy"
+            android:background="@color/c343657" />
+        <!--k线-->
+        <include
+            android:id="@+id/llkChartView"
+            layout="@layout/layout_kline_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/viewline"
+            android:visibility="gone" />
+        <!--分时图-->
+        <include
+            android:id="@+id/llMinuteView"
+            layout="@layout/layout_minute_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/viewline"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <!--底部-->
+    <include
+        layout="@layout/include_market_kline_bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

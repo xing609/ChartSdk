@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvAddExChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/d30"
+        android:background="@drawable/shape_change_manager"
+        android:gravity="center"
+        android:paddingLeft="@dimen/d25"
+        android:paddingTop="@dimen/d10"
+        android:paddingRight="@dimen/d25"
+        android:paddingBottom="@dimen/d10"
+        android:text="@string/txt_add_my_change"
+        android:textColor="@color/c9EB2CD"
+        android:textSize="@dimen/f16"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/c6A798E"
+        android:textSize="@dimen/f16" />
+
+    <TextView
+        android:id="@+id/tvRetry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_btn_wai_e7edf5"
+        android:paddingLeft="@dimen/d25"
+        android:paddingTop="@dimen/d5"
+        android:paddingRight="@dimen/d25"
+        android:paddingBottom="@dimen/d5"
+        android:visibility="gone"
+        android:text="重试"
+        android:textColor="@color/cE7EDF5"
+        android:textSize="@dimen/f16" />
+
+</LinearLayout>

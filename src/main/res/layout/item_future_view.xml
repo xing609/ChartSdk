@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d46"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/f13"
+            android:paddingRight="@dimen/f13">
+
+            <com.star.app.widget.autoText.AutofitTextView
+                android:id="@+id/tvFutureName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:lines="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textColor="@color/cD8DDE3"
+                android:textSize="@dimen/f16"
+                autofit:minTextSize="@dimen/f8" />
+
+            <com.star.app.widget.autoText.AutofitTextView
+                android:id="@+id/tvFutureBestNew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/d5"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center|right"
+                android:lines="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="-"
+                android:textColor="@color/cD8DDE3"
+                android:textSize="@dimen/f18"
+                autofit:minTextSize="@dimen/f8" />
+
+            <com.star.app.widget.autoText.AutofitTextView
+                android:id="@+id/tvFutureVolume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/d5"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:lines="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textColor="@color/cD8DDE3"
+                android:textSize="@dimen/f18"
+                autofit:minTextSize="@dimen/f8" />
+
+            <!--涨幅-->
+            <com.star.app.widget.autoText.AutofitTextView
+                android:id="@+id/tvFutureUpOrDown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/d5"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center|right"
+                android:lines="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="-"
+                android:textColor="@color/cD8DDE3"
+                android:textSize="@dimen/f18"
+                android:visibility="gone"
+                autofit:minTextSize="@dimen/f8" />
+
+            <!--成交量-->
+            <com.star.app.widget.autoText.AutofitTextView
+                android:id="@+id/tvVolume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/d5"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center|right"
+                android:lines="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="-"
+                android:textColor="@color/cD8DDE3"
+                android:textSize="@dimen/f18"
+                android:visibility="gone"
+                autofit:minTextSize="@dimen/f8" />
+
+            <!--持仓量-->
+            <com.star.app.widget.autoText.AutofitTextView
+                android:id="@+id/tvInterest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/d5"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center|right"
+                android:lines="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="-"
+                android:textColor="@color/cD8DDE3"
+                android:textSize="@dimen/f18"
+                android:visibility="gone"
+                autofit:minTextSize="@dimen/f8" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d2"
+            android:background="@color/c2A2D4F" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvMyExChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/d30"
+        android:layout_marginBottom="@dimen/d30"
+        android:background="@drawable/shape_change_manager"
+        android:drawablePadding="@dimen/d10"
+        android:gravity="center"
+        android:paddingLeft="@dimen/d25"
+        android:paddingTop="@dimen/d10"
+        android:paddingRight="@dimen/d25"
+        android:paddingBottom="@dimen/d10"
+        android:text="@string/txt_my_change_manager"
+        android:textColor="@color/c9EB2CD"
+        android:textSize="@dimen/f16"
+        android:visibility="gone" />
+</LinearLayout>

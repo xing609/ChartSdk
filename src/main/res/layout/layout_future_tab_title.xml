@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c2A2D4F"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/d5"
+    android:paddingBottom="@dimen/d5"
+    >
+    <TextView
+        android:id="@+id/tvFutureName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:paddingLeft="13dp"
+        android:text="名称"
+        android:textColor="@color/c6A798E"
+        android:textSize="@dimen/f13" />
+
+    <TextView
+        android:id="@+id/tvFutureBestNew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center|right"
+        android:text="最新"
+        android:textColor="@color/c6A798E"
+        android:textSize="@dimen/f13" />
+
+
+    <TextView
+        android:id="@+id/tvFutureVolume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="@string/upDown"
+        android:textColor="@color/c6A798E"
+        android:textSize="@dimen/f13" />
+    <!--成交量-->
+    <TextView
+        android:id="@+id/tvFutureUpOrDown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center|right"
+        android:paddingRight="13dp"
+        android:text="@string/volume"
+        android:textColor="@color/c6A798E"
+        android:textSize="@dimen/f13" />
+</LinearLayout>

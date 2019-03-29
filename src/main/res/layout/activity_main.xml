@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainTestActivity">
+
+    <Button
+        android:id="@+id/btnMarket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看K线" />
+
+    <com.github.tifezh.kchartlib.chart.view.KMarketChartView
+        android:id="@+id/kchart_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:kc_candle_line_width="1dp"
+        app:kc_candle_solid="false"
+        app:kc_candle_width="5dp"
+        app:kc_d_color="@color/chart_ma10"
+        app:kc_dea_color="@color/chart_ma10"
+        app:kc_dif_color="@color/chart_ma5"
+        app:kc_dn_color="@color/chart_ma20"
+        app:kc_grid_line_color="#d0d0d0"
+        app:kc_grid_line_width="0.5dp"
+        app:kc_j_color="@color/chart_ma20"
+        app:kc_k_color="@color/chart_ma5"
+        app:kc_line_width="@dimen/chart_line_width"
+        app:kc_ma10_color="@color/chart_ma10"
+        app:kc_ma20_color="@color/chart_ma20"
+        app:kc_ma40_color="@color/chart_ma40"
+        app:kc_ma5_color="@color/chart_ma5"
+        app:kc_ma60_color="@color/chart_ma60"
+        app:kc_macd_color="@color/chart_ma20"
+        app:kc_macd_width="5dp"
+        app:kc_mb_color="@color/chart_ma10"
+        app:kc_point_width="6dp"
+        app:kc_ris3_color="@color/chart_ma20"
+        app:kc_rsi1_color="@color/chart_ma5"
+        app:kc_rsi2_color="@color/chart_ma10"
+        app:kc_selected_line_color="#B1B2B6"
+        app:kc_selected_line_width="1dp"
+        app:kc_selector_background_color="#c8d0d0d0"
+        app:kc_selector_text_size="@dimen/chart_selector_text_size"
+        app:kc_tab_background_color="#fff"
+        app:kc_tab_indicator_color="#4473b1"
+        app:kc_tab_text_color="@color/tab_light_text_color_selector"
+        app:kc_text_color="#787878"
+        app:kc_text_size="@dimen/chart_text_size"
+        app:kc_up_color="@color/chart_ma5" />
+
+
+</LinearLayout>

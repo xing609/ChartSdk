@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c2A2D4F"
+    android:orientation="vertical">
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d35"
+        android:layout_alignParentTop="true"
+        android:background="@color/c2A2D4F"
+        android:gravity="center_vertical"
+        android:overScrollMode="never"
+        android:visibility="gone"
+        app:tabIndicatorHeight="0dp"
+        app:tabSelectedTextColor="@color/cffffff"
+        app:tabTextColor="@color/c9EB2CD"
+        app:tabBackground="@color/c2A2D4F"
+        app:tabIndicatorColor="@color/cD4975C"
+        app:tabMode="scrollable" />
+    <View
+        android:id="@+id/vTopLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1"
+        android:layout_below="@+id/tabLayout"
+        android:background="@color/c0DFFFFFF"/>
+    <include
+        android:id="@+id/viewTab"
+        layout="@layout/layout_future_tab_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vTopLine"
+        android:layout_marginTop="@dimen/d1"
+        android:visibility="gone" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvFutureChild"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/c2A2D4F"
+        android:fadeScrollbars="true"
+       />
+
+
+</RelativeLayout>

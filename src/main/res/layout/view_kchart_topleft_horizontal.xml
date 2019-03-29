@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c2A2D4F"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/d8">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include layout="@layout/view_kchart_left_horizontal" />
+
+
+            <LinearLayout
+                android:id="@+id/llMarketBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+            <!--卖/买-->
+                <include
+                    layout="@layout/layout_kchart_buysell_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            <!--持仓量-->
+            <RelativeLayout
+                android:id="@+id/rlInventory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/d10"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="@dimen/d5">
+
+                <TextView
+                    android:id="@+id/txtInventory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_Inventory"
+                    android:textColor="@color/c6A798E"
+                    android:textSize="@dimen/f12" />
+
+                <TextView
+                    android:id="@+id/tvInventoryValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtInventory"
+                    android:layout_alignLeft="@+id/txtInventory"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical|left"
+                    android:layout_toLeftOf="@+id/tvChangeInventoryValue"
+                    android:layout_centerVertical="true"
+                    android:text="--"
+                    android:textColor="@color/c9EB2CD"
+                    android:lines="1"
+                    android:textSize="@dimen/f14" />
+
+                <TextView
+                    android:id="@+id/tvChangeInventoryValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtInventory"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/d10"
+                    android:gravity="right|center_vertical"
+                    android:text="--"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/c9EB2CD"
+                    android:lines="1"
+                    android:textSize="@dimen/f14" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d1"
+                android:layout_marginTop="@dimen/d5"
+                android:layout_marginRight="@dimen/d10"
+                android:background="@color/cFF353858" />
+
+            <!--成交量-->
+            <RelativeLayout
+                android:id="@+id/rlVolume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/d10"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="@dimen/d5">
+
+                <TextView
+                    android:id="@+id/txtVolume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_Volume"
+                    android:textColor="@color/c6A798E"
+                    android:textSize="@dimen/f12" />
+
+                <TextView
+                    android:id="@+id/tvVolumeValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtVolume"
+                    android:layout_alignLeft="@+id/txtVolume"
+                    android:text="--"
+                    android:lines="1"
+                    android:textColor="@color/c9EB2CD"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical|left"
+                    android:layout_toLeftOf="@+id/tvChangeVolumeValue"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="@dimen/f14" />
+
+                <TextView
+                    android:id="@+id/tvChangeVolumeValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtVolume"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical|right"
+                    android:layout_centerVertical="true"
+                    android:text="--"
+                    android:lines="1"
+                    android:textColor="@color/c9EB2CD"
+                    android:textSize="@dimen/f14" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d1"
+                android:layout_marginTop="@dimen/d5"
+                android:layout_marginRight="@dimen/d10"
+                android:background="@color/cFF353858" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

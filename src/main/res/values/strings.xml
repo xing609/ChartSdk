@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">DemoOne</string>
+
+    <!--K线-->
+    <string name="txt_sell">卖</string>
+    <string name="txt_buy">买</string>
+    <string name="txt_Inventory">持仓量</string>
+    <string name="txt_Volume">成交量</string>
+    <string name="no_helper_data">- -</string>
+    <string name="txt_chart_more">更多</string>
+    <string name="txt_tape">盘口</string>
+    <string name="txt_cancel_my_change">取消自选</string>
+    <string name="txt_chart_warn">预警</string>
+    <string name="txt_chart_plus">加自选</string>
+    <string name="txt_chart_share">分享</string>
+    <string name="txt_chart_speces">说明</string>
+    <string name="txt_chart_jinshuzhinengxxsq">金属智能信息神器</string>
+    <string name="txt_chart_fenxiangdibuzhanshi">现货报价·精品快讯·智能测算</string>
+    <string name="no_data">暂无数据</string>
+    <string name="again">重试</string>
+    <string name="net_error">网络问题，请点击</string>
+    <string name="load_error">加载失败，请点击</string>
+    <string name="refresh">刷新</string>
+    <string name="txt_add_my_change">添加自选</string>
+    <string name="txt_cancel">取消</string>
+    <string name="txt_wexinfriend">微信</string>
+    <string name="txt_wexinfriends">微信朋友圈</string>
+    <string name="txt_qqfriend">QQ好友</string>
+    <string name="txt_sinweibo">新浪</string>
+    <string name="volume">成交量</string>
+    <string name="upDown">涨跌</string>
+    <string name="txt_my_change_manager">自选管理</string>
+    <string name="updownPercent">涨幅</string>
+    <string name="interest">持仓量</string>
+</resources>

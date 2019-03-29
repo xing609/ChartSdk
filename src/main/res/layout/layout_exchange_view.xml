@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c2A2D4F"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvContactName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/cE7EDF5"
+        android:textSize="@dimen/f16"
+        android:layout_marginLeft="@dimen/d5"
+        android:layout_marginTop="@dimen/d10"
+        android:layout_marginBottom="@dimen/d10"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/lineName"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cFF353858"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <!--横屏显示信息-->
+        <com.star.app.view.MarketLeftHorizontalView
+            android:id="@+id/viewMinuteLeftMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/lineMinuteView"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/cFF353858"
+            android:visibility="gone" />
+
+        <com.github.tifezh.kchartlib.chart.rate.RateView
+            android:id="@+id/rateView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/c2A2D4F" />
+
+        <include
+            android:id="@+id/exchangeEmpty"
+            layout="@layout/view_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+</LinearLayout>

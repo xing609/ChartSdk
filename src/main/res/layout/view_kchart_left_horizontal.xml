@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c2A2D4F"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvLastValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/d10"
+        android:text="- -"
+        android:textColor="@color/c3EB86A"
+        android:lines="1"
+        android:textSize="@dimen/f30" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- -"
+        android:textColor="@color/c3EB86A"
+        android:lines="1"
+        android:textSize="@dimen/f18" />
+
+    <TextView
+        android:id="@+id/tvPercentValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- -%"
+        android:textColor="@color/c3EB86A"
+        android:lines="1"
+        android:textSize="@dimen/f18" />
+
+
+    <TextView
+        android:id="@+id/tvLMEValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="对LME3M比值:--"
+        android:textColor="@color/cE7EDF5"
+        android:textSize="@dimen/f10"
+        android:lines="1"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvProfitValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d2"
+        android:text="进口盈亏:--"
+        android:textColor="@color/cE7EDF5"
+        android:textSize="@dimen/f10"
+        android:lines="1"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d6"
+        android:layout_marginTop="@dimen/d5"
+        android:layout_marginRight="@dimen/d10"
+        android:background="@color/cFF353858" />
+
+</LinearLayout>

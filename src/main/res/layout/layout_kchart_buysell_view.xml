@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c2A2D4F"
+    android:orientation="vertical">
+    <!--卖-->
+    <RelativeLayout
+        android:id="@+id/rlSell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/d10"
+        android:minWidth="@dimen/d100"
+        android:paddingTop="@dimen/d5">
+
+        <TextView
+            android:id="@+id/txtSell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_sell"
+            android:textColor="@color/c6A798E"
+            android:textSize="@dimen/f12" />
+
+        <TextView
+            android:id="@+id/tvSellValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtSell"
+            android:layout_alignLeft="@+id/txtSell"
+            android:layout_marginRight="@dimen/d10"
+            android:layout_toLeftOf="@+id/tvSellCount"
+            android:layout_centerVertical="true"
+            android:gravity="center|left"
+            android:text="- -"
+            android:lines="1"
+            android:textColor="@color/c9EB2CD"
+            android:textSize="@dimen/f14" />
+
+        <TextView
+            android:id="@+id/tvSellCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvSellValue"
+            android:layout_alignParentRight="true"
+            android:text="- -"
+            android:textColor="@color/c9EB2CD"
+            android:layout_centerVertical="true"
+            android:lines="1"
+            android:textSize="@dimen/f14" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/d1"
+        android:layout_marginTop="@dimen/d5"
+        android:layout_marginRight="@dimen/d10"
+        android:background="@color/cFF353858" />
+
+
+    <!--买-->
+    <RelativeLayout
+        android:id="@+id/rlBuy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/d10"
+        android:paddingTop="@dimen/d5">
+
+        <TextView
+            android:id="@+id/txtBuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_buy"
+            android:textColor="@color/c6A798E"
+            android:textSize="@dimen/f12" />
+
+        <TextView
+            android:id="@+id/tvBuyValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtBuy"
+            android:layout_alignLeft="@+id/txtBuy"
+            android:layout_marginRight="@dimen/d10"
+            android:layout_toLeftOf="@+id/tvBuyCount"
+            android:gravity="center|left"
+            android:text="- -"
+            android:textColor="@color/c9EB2CD"
+            android:lines="1"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/f14" />
+
+        <TextView
+            android:id="@+id/tvBuyCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvBuyValue"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="- -"
+            android:textColor="@color/c9EB2CD"
+            android:lines="1"
+            android:textSize="@dimen/f14" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1"
+        android:layout_marginTop="@dimen/d5"
+        android:layout_marginRight="@dimen/d10"
+        android:background="@color/cFF353858" />
+</LinearLayout>

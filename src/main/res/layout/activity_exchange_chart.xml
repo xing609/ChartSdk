@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c2A2D4F">
+    <include
+        android:id="@+id/titleBar"
+        layout="@layout/include_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+    <RelativeLayout
+        android:id="@+id/rlLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titleBar"
+        android:layout_above="@+id/llBottomTab">
+
+        <include
+            android:id="@+id/vExchangeTop"
+            layout="@layout/activity_exchange_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+
+        <View
+            android:id="@+id/viewline"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_below="@+id/vExchangeTop"
+            android:layout_marginTop="@dimen/d8"
+            android:background="@color/c343657" />
+
+        <include
+            layout="@layout/layout_exchange_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/viewline" />
+
+    </RelativeLayout>
+
+
+    <!--底部-->
+    <include
+        layout="@layout/include_market_kline_bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

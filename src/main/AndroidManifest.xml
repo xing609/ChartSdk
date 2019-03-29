@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.star.app.ui">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+    <!--<uses-permission android:name="android.permission.READ_LOGS" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
+    <!--<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />-->
+    <!--<uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />-->
+    <!--<uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />-->
+    <!--<uses-permission android:name="android.permission.GET_ACCOUNTS" />-->
+    <!--<uses-permission android:name="android.permission.WRITE_SETTINGS" />-->
+    <!--<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />-->
+    <!--<uses-permission android:name="android.permission.VIBRATE" />-->
+    <!--<uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />-->
+    <!--<uses-permission android:name="android.permission.WAKE_LOCK" />-->
+    <!--<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />-->
+
+    <!--&lt;!&ndash; 锁屏 &ndash;&gt;-->
+    <!--<uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />-->
+    <!--&lt;!&ndash; 【必选】用以设置前台是否显示通知 &ndash;&gt;-->
+    <!--<uses-permission android:name="android.permission.GET_TASKS" />-->
+    <!--<uses-permission android:name="android.permission.RESTART_PACKAGES" />-->
+    <!--&lt;!&ndash; 异步广播消息权限 &ndash;&gt;-->
+    <!--<uses-permission android:name="android.permission.BROADCAST_STICKY" />-->
+    <!--&lt;!&ndash; 在SDCard中创建与删除文件权限 &ndash;&gt;-->
+    <!--<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />-->
+    <!--&lt;!&ndash; 往SDCard写入数据权限 &ndash;&gt;-->
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+    <!--<uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />-->
+    <!--&lt;!&ndash; 手机通讯录 &ndash;&gt;-->
+    <!--<uses-permission android:name="android.permission.READ_CONTACTS" />-->
+    <!--&lt;!&ndash; 拍照和访问手机相册 &ndash;&gt;-->
+    <!--<uses-feature android:name="android.hardware.camera" />-->
+    <!--<uses-feature android:name="android.hardware.camera.autofocus" />-->
+
+    <!--<uses-permission android:name="android.permission.CAMERA" />-->
+    <!--&lt;!&ndash; 添加可以向外拨打电话的权限 &ndash;&gt;-->
+    <!--<uses-permission android:name="android.permission.CALL_PHONE" />-->
+    <!--&lt;!&ndash; 安装apk权限 &ndash;&gt;-->
+    <!--<permission android:name="android.permission.INSTALL_PACKAGES" />-->
+    <!--&lt;!&ndash; 8.0安装权限 &ndash;&gt;-->
+    <!--<uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
+    <!--<uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />-->
+    <!--&lt;!&ndash; 查看网络状态 &ndash;&gt;-->
+    <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
+    <!--&lt;!&ndash; 防止设备休眠 &ndash;&gt;-->
+    <!--<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />-->
+    <!--<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />-->
+    <!--&lt;!&ndash; 快捷方式 &ndash;&gt;-->
+    <!--<uses-permission android:name="android.permission.INSTALL_SHORTCUT" />-->
+
+</manifest>

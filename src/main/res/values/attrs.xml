@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="MyNumberProgressBar">
+        <attr name="my_progress_current" format="integer" />
+        <attr name="my_progress_max" format="integer" />
+
+        <attr name="my_progress_unreached_color" format="color" />
+        <attr name="my_progress_reached_color" format="color" />
+
+        <attr name="my_progress_reached_bar_height" format="dimension" />
+        <attr name="my_progress_unreached_bar_height" format="dimension" />
+
+        <attr name="my_progress_text_size" format="dimension" />
+        <attr name="my_progress_text_color" format="color" />
+
+        <attr name="my_progress_text_offset" format="dimension" />
+
+        <attr name="my_progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="Themes">
+        <attr name="numberProgressBarStyle" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="AutofitTextView">
+        <!-- Minimum size of the text. -->
+        <attr name="minTextSize" format="dimension" />
+        <!-- Amount of precision used to calculate the correct text size to fit within its
+        bounds. Lower precision is more precise and takes more time. -->
+        <attr name="precision" format="float" />
+        <!-- Defines whether to automatically resize text to fit to the view's bounds. -->
+        <attr name="sizeToFit" format="boolean" />
+    </declare-styleable>
+
+</resources>
