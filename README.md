@@ -8,7 +8,7 @@
 ，分时如果是同一个交易日显示（时/分）,不是同一个交易日显示（月/日）;
 *    上效果图：
 
-   ![image](https://github.com/xing609/UniversalButton/blob/master/app/assets/universal_button.gif)
+   ![image](https://github.com/xing609/chartSdk/blob/master/assets/chart.gif)
 
 ## 二.接入流程
 *    1.先clone 拉取sdk 包，然后Import Module引入主项目里，clean 一下；
