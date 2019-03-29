@@ -6,7 +6,9 @@
 *    分时图主视图显示指标：分时线、均价;          子视图：MACD、CJL;
 *    k 线（1日、1m、3m、5m、15m、30m、1h、2h、3h、4h）时间可通过接口动态配置。主视图显示指标：k线、MA、BOLL;     子视图指标：CJL、MACD、KDJ。日线时间轴5等份显示月/日，跨年显示（年/月）
 ，分时如果是同一个交易日显示（时/分）,不是同一个交易日显示（月/日）;
+*    上效果图：
 
+   ![image](https://github.com/xing609/UniversalButton/blob/master/app/assets/universal_button.gif)
 
 ## 二.接入流程
 *    1.先clone 拉取sdk 包，然后Import Module引入主项目里，clean 一下；
@@ -71,4 +73,8 @@
                   .build());  
 *   除网络请求框架、k线图已经生成aa包不可修改，其它都可以任意修改样式。
                 
+## 四.技术交流  
+*    欢迎加入Android 学习交流群：**413893967**
+   <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=5EUEsBC"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png"></a>
+*    个人联系方式：512002160@qq.com   
 
