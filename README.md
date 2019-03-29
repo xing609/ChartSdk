@@ -3,6 +3,10 @@
 ## 一.项目简介
     
 *    整体是以Module 方式被其它应用接入，该Module 里网络请求(kchartlib-release.aar)和k线绘制(mvp-release.aar)打成aar 包
+*    分时图主视图显示指标：分时线、均价;          子视图：MACD、CJL;
+*    k 线（1日、1m、3m、5m、15m、30m、1h、2h、3h、4h）时间可通过接口动态配置。主视图显示指标：k线、MA、BOLL;     子视图指标：CJL、MACD、KDJ。日线时间轴5等份显示月/日，跨年显示（年/月）
+，分时如果是同一个交易日显示（时/分）,不是同一个交易日显示（月/日）;
+
 
 ## 二.接入流程
 *    1.先clone 拉取sdk 包，然后Import Module引入主项目里，clean 一下；
