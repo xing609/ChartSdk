@@ -6,7 +6,7 @@
 *    分时图主视图显示指标：分时线、均价;          子视图：MACD、CJL;
 *    k 线（1日、1m、3m、5m、15m、30m、1h、2h、3h、4h）时间可通过接口动态配置。主视图显示指标：k线、MA、BOLL;     子视图指标：CJL、MACD、KDJ。日线时间轴5等份显示月/日，跨年显示（年/月）
 ，分时如果是同一个交易日显示（时/分）,不是同一个交易日显示（月/日）;
-*    上效果图：
+*    上Gif效果图：
 
    ![image](https://github.com/xing609/chartSdk/blob/master/assets/chart.gif)
 
