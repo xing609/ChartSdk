@@ -73,7 +73,7 @@
                   .build());  
 *   除网络请求框架、k线图已经生成aa包不可修改，其它都可以任意修改样式。
                 
-## 四.技术交流  
+##  四.技术交流  
 *   感觉对你有帮助，记得右上角给个Star，或打赏作者喝咖啡：  
  <img border="0" src="https://github.com/xing609/AndroidDoc/blob/master/img/zfb_pay.jpg" width="300" hegiht="600" align=center>  <img border="0" src="https://github.com/xing609/AndroidDoc/blob/master/img/wx_pay.png" width="300" hegiht="600" align=center>
 *    欢迎加入Android 学习交流群：**413893967**
