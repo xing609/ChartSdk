@@ -1,5 +1,6 @@
 # 股票行情K线、分时图打包封装sdk
 
+![](https://img.shields.io/github/stars/xing609/ChartSdk.svg?style=flat-square) ![](https://img.shields.io/github/forks/xing609/ChartSdk.svg?style=flat-square) ![GitHub watchers](https://img.shields.io/github/watchers/xing609/ChartSdk.svg?style=flat-square&label=Watch)
 ## 一.项目简介
     
 *    整体是以Module 方式被其它应用接入，该Module 里网络请求(kchartlib-release.aar)和k线绘制(mvp-release.aar)打成aar 包
