@@ -72,7 +72,7 @@
                   .setToken(token)  //用户令牌token  
                   .setLoginOutActivity("com.engjmetal.app.ui.login.LoginActivity")  //帐号被挤时跳转的Activity  
                   .build());  
-*   除网络请求框架、k线图已经生成aa包不可修改，其它都可以任意修改样式。
+*   除网络请求框架、k线图已经生成aar包不可修改，其它都可以任意修改样式。
                 
 ##  四.技术交流  
 *   感觉对你有帮助，记得右上角给个Star，或打赏作者喝咖啡：  
